@@ -2,30 +2,67 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-    <section class="hero is-dark">
+    <!-- Header -->
+    <aside class="hero is-dark">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-2">Weather Dashboard</h1>
             </div>
         </div>
-    </section>
-    <main class="columns">
+    </aside>
+    <main class="columns is-mobile is-centered">
         <!-- Sidebar -->
-        <article class="column is-2">
-            <div class="columns is-multiline">
-                <section class="column is-12">
+        <side class="column is-2" style="margin-top:10px; margin-left:10px">
+            <div >
+                <section id="searchBox">
                     <p class="title">Search for a City:</p>
                     <input class="input" type="text" placeholder="insert city name">
-                    <input class="button is-fullwidth is-info" style="margin-top:10px" type="submit" value="Search">
+                    <button class="button is-fullwidth is-info" style="margin-top:10px" type="submit">Search</button>
                 </section>
+                <hr>
                 <section class="column">test</section>
             </div>
-        </article>
+        </side>
         <!-- Main section -->
-        <section class="column"> test</section>
+        <article class="column section">
+            <section>
+                <section class="box">
+                    <p class="title">title</p>
+                    <p>Temp: </p>
+                    <p>Wind: </p>
+                    <p>Humidity: </p>
+                </section>
+                <hr>
+                <section class="box columns">
+                    <div class="box column is-2">
+                        <p class="title">title</p>
+                        <p>Icon</p>
+                        <p>Temp: </p>
+                        <p>Wind: </p>
+                        <p>Humidity: </p>
+                    </div>
+                    <div class="box column is-2">
+                        <p class="title">title</p>
+                        <p>Icon</p>
+                        <p>Temp: </p>
+                        <p>Wind: </p>
+                        <p>Humidity: </p>
+                    </div>
+                    <div class="box column is-2">
+                        <p class="title">title</p>
+                        <p>Icon</p>
+                        <p>Temp: </p>
+                        <p>Wind: </p>
+                        <p>Humidity: </p>
+                    </div>
+                    <div class="box column is-2">test</div>
+                    <div class="box column is-2">test</div>
+                </section>
+            </section>
+        </article>
     </main>
+    <script src="./js/weatherscript.js"></script>
 </body>
